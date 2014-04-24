@@ -1,0 +1,20 @@
+{
+  "name": "tree-tables",
+  "version": "0.0.1",
+  "homepage": "https://github.com/treeframework/base.tables",
+  "authors": [
+    "Ilia Kolev <treeframework@iliakolev.com>"
+  ],
+  "description": "TreeFramework - simple tables objects.",
+  "main": "_tables.scss",
+  "keywords": [
+    "TreeFramework",
+    "css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "tree-defaults": "~0.1.0",
+    "tree-functions": "~0.1.0",
+    "tree-normalize": "~0.2.1"
+  }
+}
