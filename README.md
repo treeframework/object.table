@@ -1,7 +1,13 @@
 # The tables objects
 
-The `tables` object is clone of [inuitcss] (https://github.com/inuitcss) -
-[objects.tables] (https://github.com/inuitcss/objects.tables) <q> some useful
-helpers for common table patterns</q>.
+The `tables` object has  some useful helpers for common table patterns.
 
-It is develop and maintained by [Harry Roberts] (https://twitter.com/csswizardry).
+Install using Bower:
+
+    $ bower install --save tree-tables
+
+## Credits
+
+* **[inuitcss](https://github.com/inuitcss)** Powerful, Sass-based, OOCSS
+framework designed with scalability and performance in mind.
+
