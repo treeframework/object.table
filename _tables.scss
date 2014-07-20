@@ -5,27 +5,29 @@
 // *************************************
 
 // Predefine the variables below in order to alter and enable specific features.
-$tree-table-padding--compact: quarter($tree-base-spacing-unit) !default;
-$tree-table-padding--cosy:    halve($tree-base-spacing-unit) !default;
-$tree-table-padding--comfy:   $tree-base-spacing-unit !default;
+$tree-table-namespace:          $tree-namespace !default;
 
-$tree-table-border-width:     1px !default;
-$tree-table-border-style:     solid !default;
-$tree-table-border-color:     #ccc !default;
+$tree-table-padding--compact:   quarter($tree-base-spacing-unit) !default;
+$tree-table-padding--cosy:      halve($tree-base-spacing-unit) !default;
+$tree-table-padding--comfy:     $tree-base-spacing-unit !default;
 
-$tree-enable-table--fixed:    false !default;
-$tree-enable-table--compact:  false !default;
-$tree-enable-table--cosy:     false !default;
-$tree-enable-table--comfy:    false !default;
-$tree-enable-table--cells:    false !default;
-$tree-enable-table--rows:     false !default;
-$tree-enable-table--columns:  false !default;
+$tree-table-border-width:       1px !default;
+$tree-table-border-style:       solid !default;
+$tree-table-border-color:       #ccc !default;
+
+$tree-enable-table--fixed:      false !default;
+$tree-enable-table--compact:    false !default;
+$tree-enable-table--cosy:       false !default;
+$tree-enable-table--comfy:      false !default;
+$tree-enable-table--cells:      false !default;
+$tree-enable-table--rows:       false !default;
+$tree-enable-table--columns:    false !default;
 
 
 
 
-.#{$tree-namespace}table,
-%#{$tree-namespace}table {
+.#{$tree-table-namespace}table,
+%#{$tree-table-namespace}table {
     width: 100%;
 }
 
@@ -36,8 +38,8 @@ $tree-enable-table--columns:  false !default;
 @if ($tree-enable-table--fixed == true) {
 
     // Force tables into having equal-width columns.
-    .#{$tree-namespace}table--fixed,
-    %#{$tree-namespace}table--fixed {
+    .#{$tree-table-namespace}table--fixed,
+    %#{$tree-table-namespace}table--fixed {
         table-layout: fixed;
     }
 
@@ -50,8 +52,8 @@ $tree-enable-table--columns:  false !default;
 @if ($tree-enable-table--compact == true) {
 
     // Tables with very tightly packed cells.
-    .#{$tree-namespace}table--compact,
-    %#{$tree-namespace}table--compact {
+    .#{$tree-table-namespace}table--compact,
+    %#{$tree-table-namespace}table--compact {
 
         th,
         td {
@@ -69,8 +71,8 @@ $tree-enable-table--columns:  false !default;
 @if ($tree-enable-table--cosy == true) {
 
     // Lightly packed cells.
-    .#{$tree-namespace}table--cosy,
-    %#{$tree-namespace}table--cosy {
+    .#{$tree-table-namespace}table--cosy,
+    %#{$tree-table-namespace}table--cosy {
 
         th,
         td {
@@ -88,8 +90,8 @@ $tree-enable-table--columns:  false !default;
 @if ($tree-enable-table--comfy == true) {
 
     // Tables with very widely padded cells.
-    .#{$tree-namespace}table--comfy,
-    %#{$tree-namespace}table--comfy {
+    .#{$tree-table-namespace}table--comfy,
+    %#{$tree-table-namespace}table--comfy {
 
         th,
         td {
@@ -107,8 +109,8 @@ $tree-enable-table--columns:  false !default;
 @if ($tree-enable-table--cells == true) {
 
     // Add borders around a `table`.
-    .#{$tree-namespace}table--cells,
-    %#{$tree-namespace}table--cells {
+    .#{$tree-table-namespace}table--cells,
+    %#{$tree-table-namespace}table--cells {
 
         th,
         td {
@@ -126,8 +128,8 @@ $tree-enable-table--columns:  false !default;
 @if ($tree-enable-table--rows  == true) {
 
     // Add borders only to `table`'s rows.
-    .#{$tree-namespace}table--rows,
-    %#{$tree-namespace}table--rows {
+    .#{$tree-table-namespace}table--rows,
+    %#{$tree-table-namespace}table--rows {
 
         &,
         th,
@@ -137,8 +139,8 @@ $tree-enable-table--columns:  false !default;
 
     }
 
-    .#{$tree-namespace}table--rows,
-    %#{$tree-namespace}table--rows {
+    .#{$tree-table-namespace}table--rows,
+    %#{$tree-table-namespace}table--rows {
         border-top-width: $tree-table-border-width;
 
         th,
@@ -156,8 +158,8 @@ $tree-enable-table--columns:  false !default;
 @if ($tree-enable-table--columns == true) {
 
     // Add borders only to `table`'s columns.
-    .#{$tree-namespace}table--columns,
-    %#{$tree-namespace}table--columns {
+    .#{$tree-table-namespace}table--columns,
+    %#{$tree-table-namespace}table--columns {
 
         &,
         th,
@@ -166,8 +168,8 @@ $tree-enable-table--columns:  false !default;
         }
     }
 
-    .#{$tree-namespace}table--columns,
-    %#{$tree-namespace}table--columns {
+    .#{$tree-table-namespace}table--columns,
+    %#{$tree-table-namespace}table--columns {
         border-left-width: $tree-table-border-width;
 
         th,
