@@ -1,6 +1,6 @@
 # The tables objects
 
-The `tables` object has  some useful helpers for common table patterns.
+Some useful helpers for common table patterns.
 
 Install using Bower:
 
