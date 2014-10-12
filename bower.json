@@ -1,20 +1,23 @@
 {
   "name": "tree-tables",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/treeframework/object.tables",
   "authors": [
     "Harry Roberts <harry@csswizardry.com>",
     "Ilia Kolev <info@iliakolev.com>"
   ],
   "description": "Simple tables objects.",
-  "main": "_tables.scss",
+  "main": "_object.tables.scss",
+  "ignore": [
+    "*.md"
+  ],
   "keywords": [
     "css"
   ],
   "license": "Apache",
   "dependencies": {
-    "tree-defaults": "latest",
-    "tree-functions": "latest",
-    "tree-normalize": "latest"
+    "tree-defaults": "~0.2.4",
+    "tree-functions": "~0.2.4",
+    "tree-normalize": "~3.0.3"
   }
 }
