@@ -1,17 +1,17 @@
 {
   "name": "tree-tables",
   "description": "Simple tables.",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "bugs": {
-    "url": "https://github.com/treeframework/objects.tables/issues"
+    "url": "https://github.com/treeframework/object.tables/issues"
   },
   "dependencies": {
     "tree-defaults": "~0.2.5",
     "tree-functions": "~0.2.5",
     "tree-normalize": "~3.0.3"
   },
-  "homepage": "https://github.com/treeframework/objects.tables",
+  "homepage": "https://github.com/treeframework/object.tables",
   "keywords": [
     "oocss",
     "css"
@@ -20,6 +20,6 @@
   "main": "_object.tables.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/treeframework/objects.tables.git"
+    "url": "https://github.com/treeframework/object.tables.git"
   }
 }
