@@ -1,10 +1,18 @@
-# The tables objects
+# Tables
 
 Some useful helpers for common table patterns.
 
 Install using Bower:
 
-    $ bower install --save tree-tables
+```sh
+$ bower install tree-tables --save
+```
+
+Install using npm:
+
+```sh
+$ npm install tree-tables --save
+```
 
 ## Credits
 
