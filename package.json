@@ -1,7 +1,7 @@
 {
-  "name": "tree-tables",
+  "name": "tree-table",
   "description": "Simple tables.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Ilia Kolev <info@iliakolev.com>",
   "bugs": {
     "url": "https://github.com/treeframework/object.table/issues"
