@@ -1,0 +1,231 @@
+// =============================================================================
+//
+// Name:          Table
+//
+// Description:   Basic tables.
+//
+// Block:         `o-table`
+//
+// Modifiers:     `o-table--fixed`
+//                `o-table--compact`
+//                `o-table--cosy`
+//                `o-table--comfy`
+//                `o-table--cells`
+//                `o-table--rows`
+//                `o-table--columns`
+//
+// Markup:
+//
+// <table class="o-table">...</table>
+//
+// =============================================================================
+
+
+
+
+
+// Variables
+// =============================================================================
+
+// Predefine the variables below in order to alter and enable specific features.
+
+$tree-table-namespace:          $tree-namespace !default;
+
+$tree-table-padding--compact:   quarter($tree-base-spacing-unit) !default;
+$tree-table-padding--cosy:        halve($tree-base-spacing-unit) !default;
+$tree-table-padding--comfy:              $tree-base-spacing-unit !default;
+
+$tree-table-border-width:         1px !default;
+$tree-table-border-style:       solid !default;
+$tree-table-border-color:        #ccc !default;
+
+$tree-enable-table--fixed:      false !default;
+$tree-enable-table--compact:    false !default;
+$tree-enable-table--cosy:       false !default;
+$tree-enable-table--comfy:      false !default;
+$tree-enable-table--cells:      false !default;
+$tree-enable-table--rows:       false !default;
+$tree-enable-table--columns:    false !default;
+
+
+
+
+
+// =============================================================================
+// Block: `o-table`
+// =============================================================================
+
+.#{$tree-table-namespace}o-table {
+    width: 100%;
+}
+
+
+
+
+
+@if ($tree-enable-table--fixed == true) {
+
+    // Modifier: `o-table--fixed`
+    // =========================================================================
+
+    // Force tables into having equal-width columns.
+
+    .#{$tree-table-namespace}o-table--fixed {
+        table-layout: fixed;
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-table--compact == true) {
+
+    // Modifier: `o-table--compact`
+    // =========================================================================
+
+    // Tables with very tightly packed cells.
+
+    .#{$tree-table-namespace}o-table--compact {
+
+        th,
+        td {
+            padding: $tree-table-padding--compact;
+        }
+
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-table--cosy == true) {
+
+    // Modifier: `o-table--cosy`
+    // =========================================================================
+
+    // Lightly packed cells.
+
+    .#{$tree-table-namespace}o-table--cosy {
+
+        th,
+        td {
+            padding: $tree-table-padding--cosy;
+        }
+
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-table--comfy == true) {
+
+    // Modifier: `o-table--comfy`
+    // =========================================================================
+
+    // Tables with very widely padded cells.
+
+    .#{$tree-table-namespace}o-table--comfy {
+
+        th,
+        td {
+            padding: $tree-table-padding--comfy;
+        }
+
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-table--cells == true) {
+
+    // Modifier: `o-table--cells`
+    // =========================================================================
+
+    // Add borders around a `table`.
+
+    .#{$tree-table-namespace}o-table--cells {
+
+        th,
+        td {
+            border: $tree-table-border-width $tree-table-border-style $tree-table-border-color;
+        }
+
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-table--rows  == true) {
+
+    // Modifier: `o-table--rows`
+    // =========================================================================
+
+    // Add borders only to `table`'s rows.
+
+    .#{$tree-table-namespace}o-table--rows {
+
+        &,
+        th,
+        td {
+            border: 0 $tree-table-border-style $tree-table-border-color;
+        }
+
+    }
+
+    .#{$tree-table-namespace}o-table--rows {
+        border-top-width: $tree-table-border-width;
+
+        th,
+        td {
+            border-bottom-width: $tree-table-border-width;
+        }
+
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-table--columns == true) {
+
+    // Modifier: `o-table--columns`
+    // =========================================================================
+
+    // Add borders only to `table`'s columns.
+
+    .#{$tree-table-namespace}o-table--columns {
+
+        &,
+        th,
+        td {
+            border: 0 $tree-table-border-style $tree-table-border-color;
+        }
+
+    }
+
+    .#{$tree-table-namespace}o-table--columns {
+        border-left-width: $tree-table-border-width;
+
+        th,
+        td {
+            border-right-width: $tree-table-border-width;
+        }
+
+    }
+
+}
