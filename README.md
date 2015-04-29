@@ -36,6 +36,8 @@ Install using npm:
 $ npm install tree-table --save
 ```
 
+### Install via file download
+
 The least recommended option for installation is to simply download
 `_object.table.scss` into your project and `@import` it into your project in its
 Objects layer.
